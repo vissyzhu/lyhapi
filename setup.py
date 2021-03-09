@@ -6,12 +6,12 @@ import setuptools
 
 
 setuptools.setup(
-    name="api_autotest", # Replace with your own username
+    name="lyhapi", # Replace with your own username
     version="0.0.1",
     author="vissyzhu",
     author_email="1209354095@qq.com",
     description="lyhcc information retriver",
-    url="https://github.com/vissyzhu/api_autotest.git",
+    url="https://github.com/vissyzhu/lyhapi.git",
     license='MIT',
     packages=setuptools.find_packages(),
     zip_safe=False

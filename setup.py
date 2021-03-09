@@ -6,7 +6,7 @@ import setuptools
 
 setuptools.setup(
     name="lyhapi",  # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="vissyzhu",
     author_email="1209354095@qq.com",
     description="lyhcc information retriver",

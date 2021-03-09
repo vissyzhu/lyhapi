@@ -9,7 +9,7 @@ from smtplib import SMTP_SSL
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
-from testdata.email_data import email_data
+from testdata import email
 
 
 # 发送邮件，发送测试报告html
@@ -18,13 +18,13 @@ def send_email(newfile):
     mail_body = f.read()
     f.close()
     today = time.strftime('%Y-%m-%d')
-    smtpserver = email_data['smtpserver']
-    title = email_data['title']
-    user = email_data['user']
-    password = email_data['password']
-    sender = email_data['sender']
-    receiver = email_data['receiver']
-    cc = email_data['cc']
+    smtpserver = email.data['smtpserver']
+    title = email.data['title']
+    user = email.data['user']
+    password = email.data['password']
+    sender = email.data['sender']
+    receiver = email.data['receiver']
+    cc = email.data['cc']
 
     # 发送邮件主题
     subject = title + 'api测试报告%s' % today

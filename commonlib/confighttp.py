@@ -4,18 +4,18 @@
 """
 
 import requests
-from testdata.http_data import http_data
+from testdata import http
 
 
 class ConfigHttp:
 
     def __init__(self):
         global scheme, api_url, www_url, web_url, port
-        scheme = http_data["scheme"]
-        api_url = http_data["api_url"]
-        www_url = http_data["www_url"]
-        web_url = http_data["web_url"]
-        port = http_data["port"]
+        scheme = http.data["scheme"]
+        api_url = http.data["api_url"]
+        www_url = http.data["www_url"]
+        web_url = http.data["web_url"]
+        port = http.data["port"]
         self.headers = {}
         # self.params = {}
         self.data = {}

@@ -4,9 +4,8 @@
 """
 import setuptools
 
-
 setuptools.setup(
-    name="lyhapi", # Replace with your own username
+    name="lyhapi",  # Replace with your own username
     version="0.0.1",
     author="vissyzhu",
     author_email="1209354095@qq.com",
